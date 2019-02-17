@@ -10,7 +10,6 @@
 
 namespace Behat\Mink\Driver\NodeJS;
 
-use Symfony\Component\Process\ProcessBuilder;
 use Symfony\Component\Process\Process;
 
 /**
@@ -346,7 +345,7 @@ abstract class Server
 
         // Create process object if neccessary
         if (null === $process) {
-            $processBuilder = new ProcessBuilder(array(
+            $processBuilder = new Process(array(
                 $this->nodeBin,
                 $this->serverPath,
             ));

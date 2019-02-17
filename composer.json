@@ -28,7 +28,7 @@
         "ext-sockets":      "*",
         "php":              ">=5.3.1",
         "behat/mink":       "~1.7@dev",
-        "symfony/process":  ">=3.0"
+        "symfony/process":  ">=4.0"
     },
 
     "require-dev": {
